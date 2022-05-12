@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+        <title>Counter Application</title>
+        <style>
+              .counter{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 30px;
+                    color: aqua;
+                    
+                }
+                span{
+                   color: aqua;
+                    font-size: 50px;
+                    padding: 10px;
+                   align-items: center;
+                    justify-items: center;
+                   
+                }
+                .btn{
+                  color:aqua;
+                    border: 1px solid lightgray;
+                    padding: 10px;
+                    border-radius: 10px;
+                    text-align: center;
+                    justify-items: center;
+
+                }
+        </style>
+        </head>
+        <body>
+           <div class="counter">
+               <h1>Counter</h1>
+               <h2>Application</h2>
+                  <h3>Here is the World Counter App</h3>
+           </div>
+           <p>
+               <span id="valueDisplay">0</span>
+            </p>
+                   <button onclick="increment()">increment</button>
+                   <button onclick="decrement()">decrement</button>
+                   <button onclick="reset()">reset</button>
+            
+           <script>
+                 let count = 0;
+               const valueDisplay = document.getElementById('valueDisplay');
+
+             function increment() {
+                 count++;
+                 valueDisplay.innerText=count;
+                 console.log(count);
+            
+             }
+             function decrement() {
+                 count--;
+                 valueDisplay.innerText=count;
+                 console.log(count);
+             }
+             function reset() {
+                 count=0;
+                 valueDisplay.innerText=0;
+                 console.log(0);
+             }
+             </script>
+           </body>
+           </html>  
